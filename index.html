@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="rocket.svg">
+    <title>NASA APOD</title>
+</head>
+<body>
+    <nav><h1>NASA APOD</h1>
+        <div class="nav-container">
+            <span class="nav-items" id="results-nav">
+                <h3 class="clickable">Favorites</h3>
+                <h3>&nbsp;&nbsp;&nbsp;◘&nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickable">Load More</h3>
+            </span>
+            <span class="nav-items hidden" id="favorites-nav">
+                <h3 class="clickable">Load More Images</h3>
+            </span>
+        </div>
+    </nav>
+    <div class="loader hidden">
+        <img src="loader.svg" alt="Loading....">
+    </div>
+    <div class="container">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
