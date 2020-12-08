@@ -37,6 +37,7 @@ function updateDOM(arr){
         const saveText=document.createElement('p');
         saveText.classList.add('clickable');
         saveText.textContent='Add To Favorites';
+        saveText.setAttribute('onclick', `saveFavorite('${result.url}')`);
 
         const cardText=document.createElement('p');
         cardText.classList.add('card-text');
@@ -59,6 +60,10 @@ function updateDOM(arr){
         // console.log(card);
         imagesContainer.appendChild(card);
     });
+}
+
+function saveFavorite(itemUrl){
+    console.log(itemUrl);
 }
 async function getNASAPictures(){
     try{
